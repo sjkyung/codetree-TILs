@@ -11,5 +11,7 @@ fun main(args: Array<String>){
 
     if( a % 3 == 0){
             print(a/3)
+    }else{
+        print(a)
     }
 }
