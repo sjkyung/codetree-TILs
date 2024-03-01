@@ -4,6 +4,7 @@ fun main(args: Array<String>){
     var b = 4
     b = a 
 
+    println("$a $b")
     println(a*b)
 
 }
