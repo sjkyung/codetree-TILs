@@ -9,6 +9,6 @@ fun main(args: Array<String>){
     if(a > b){
         print(a * b)
     }else{
-        print(b % a)
+        print(b / a)
     }
 }
