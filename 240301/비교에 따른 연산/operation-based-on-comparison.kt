@@ -6,9 +6,9 @@ fun main(args: Array<String>){
     var a = sc.nextInt()
     var b = sc.nextInt()
 
-    if(a >b){
-        print(a*b)
+    if(a > b){
+        print(a * b)
     }else{
-        print(b%a)
+        print(b % a)
     }
 }
