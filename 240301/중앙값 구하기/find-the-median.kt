@@ -9,6 +9,8 @@ fun main(args: Array<String>){
     if( a > b ){
         if(a < c){
             print(a)
+        }else{
+            print(c)
         }
     }else{
         if(b < c){
