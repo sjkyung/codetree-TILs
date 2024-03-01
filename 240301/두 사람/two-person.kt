@@ -8,5 +8,5 @@ fun main(args: Array<String>){
     var c = sc.nextInt()
     var d = sc.next()
 
-    if((b == "M")or (d == "M")) println("1") else println("0")
+    if((b == "M" && a > 19 )or (d == "M" && c > 19)) println("1") else println("0")
 }
