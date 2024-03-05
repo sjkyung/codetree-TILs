@@ -27,6 +27,9 @@ public class Main {
 
         double average = count > 0 ? (double) sum / count : 0.00;
         String formattedAverage = String.format("%.2f", average);
+        if(average == 0.00){
+            formattedAverage = "-nan";
+        }
         System.out.print(formattedAverage);
 
         scanner.close(); 
