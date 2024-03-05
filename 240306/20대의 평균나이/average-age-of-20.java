@@ -17,7 +17,7 @@ public class Main {
         int sum = 0;
         int count = 0;
         for(int age : ages){
-            if(age >= 30){
+            if(age < 20 || age >= 30){
                 break;
             }
                 sum += age;
@@ -25,12 +25,9 @@ public class Main {
         }
 
 
-        double average = count > 0 ? (double) sum / count : 0.00;
-        String formattedAverage = String.format("%.2f", average);
-        if(average == 0.00){
-            formattedAverage = "-nan";
-        }
-        System.out.print(formattedAverage);
+        double average = (double) sum / count;
+
+        System.out.printf("%.2f", average);
 
         scanner.close(); 
     }
