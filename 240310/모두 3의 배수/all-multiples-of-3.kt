@@ -1,16 +1,6 @@
 fun main(args: Array<String>){
 
-    val numbers = mutableListOf<Int>()
-    repeat(5) {
-    val num = readLine()!!.toInt()
-    numbers.add(num)
-    }
+    val numbers = List(5) { readLine()!!.toInt() }
 
-    for(num in numbers){
-        if(num % 3 != 0){
-            print(0)
-            break;
-        }
-    }
-    print(1)
+    val result = if (numbers.all { it % 3 == 0 }) print(1) else print(0)
 }
